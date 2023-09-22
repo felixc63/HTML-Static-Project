@@ -3,9 +3,16 @@ body{
     padding: 0;
 }
 
-header{
+header, footer{
     color: white;
     background-color: #28242c;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 #title-div{
@@ -34,4 +41,10 @@ header{
     color: white;
     user-select: none;
     text-decoration: none;
+}
+
+#home-info-container p{
+    margin-left: 1%;
+    font-family: "Poppins";
+    font-size: 150%;
 }

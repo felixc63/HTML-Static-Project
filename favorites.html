@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header of the whole site-->
+    <header>
+        <div id="title-div">
+            <h1 id="title">Favorties</h1>
+        </div>
+        <nav id="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="skills.html">Skills</a>
+            <a href="spots.html">Spots</a>
+        </nav>
+    </header>
+
+    
+
+    <!-- footer of the whole site-->
+    <footer>
+        <label>Contact Me!</label>
+        <div>
+            <form>
+                <label>Email:</label>   
+                <input type="text" id="email-input">
+                <label>Text:</label>
+                <input type="text" id="text-input">
+                <button onclick="event.preventDefault(); document.getElementById('email-input').value = ''; document.getElementById('text-input').value = '';">Submit</button>
+            </form>
+        </div>
+        <div>
+            <label>&copy; Felix Chan</label>
+        </div>
+    </footer>
+</body>
+</html>
