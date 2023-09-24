@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Favorites</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,23 +12,56 @@
     <!-- header of the whole site-->
     <header>
         <div id="title-div">
-            <h1 id="title">Favorties</h1>
+            <h1 id="title">Favorites</h1>
         </div>
+        <hr />
         <nav id="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="skills.html">Skills</a>
-            <a href="spots.html">Spots</a>
+            <a href="index.html"><h2>Home</h2></a>
+            <a href="favorites.html"><h2>Favorites</h2></a>
+            <a href="skills.html"><h2>Skills</h2></a>
+            <a href="spots.html"><h2>Spots</h2></a>
         </nav>
     </header>
 
-    
+    <h2 id="favorites-title">Hobbies and Interests</h2>
+    <table id="hobbies" border="1">
+        <tr>
+          <td><h3>Video Games</h3></td>
+          <td><h3>Reading</h3></td>
+          <td><h3>Anime</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Some of my favorite games include Valorant, Counter-Strike: Global Offensive, and Tom Clancy's Rainbow Six Siege.</p>
+                <a href="http://www.playvalorant.com" target="_blank"><img src="images/valorant.jpg"></a>
+            </td>
+            <td>
+                <p>Books that are my personal favorites are The Alchemist by Paulo Coelo and The 48 Laws of Power by Robert Greene.</p>
+                <table border="1">
+                    <tr id="book-row">
+                        <td><a href="https://www.amazon.com/Alchemist-Paulo-Coelho/dp/0062315005/ref=sr_1_1?crid=AGM9E70HKCLB&keywords=the+alchemist&qid=1695521446&sprefix=the+a%2Caps%2C77&sr=8-1" target="_blank"><img src="images/thealchemist.jpg"></a></td>
+                        <td><a href="https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_1?crid=2K05N5LGPZLFC&keywords=the+48+laws+of+power&qid=1695521573&sprefix=the+48+laws+of+power%2Caps%2C73&sr=8-1" target="_blank"><img src="images/48laws.jpg"></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Eighty-Six and The Eminence in Shadow are some of my favorites in the anime genre.</p>
+                <table border="1">
+                    <tr id="anime-row">
+                        <td><a href="https://myanimelist.net/anime/41457/86" target="_blank"><img src="images/eightysix.jpg"></a></td>
+                        <td><a href="https://myanimelist.net/anime/48316/Kage_no_Jitsuryokusha_ni_Naritakute" target="_blank"><img src="images/theeminenceinshadow.jpg"></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
     <!-- footer of the whole site-->
     <footer>
-        <label>Contact Me!</label>
         <div>
             <form>
+                <label>Contact Me!</label>
+                <br>
                 <label>Email:</label>   
                 <input type="text" id="email-input">
                 <label>Text:</label>
@@ -35,7 +69,12 @@
                 <button onclick="event.preventDefault(); document.getElementById('email-input').value = ''; document.getElementById('text-input').value = '';">Submit</button>
             </form>
         </div>
+        <div id="links-container">
+            <a href="https://github.com/MajesticFelix/" target="_blank"><img class="links" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/felix-chan-502636283/" target="_blank"><img img class="links" src="images/linkedin.png"></a>
+        </div>
         <div>
+            <br>
             <label>&copy; Felix Chan</label>
         </div>
     </footer>

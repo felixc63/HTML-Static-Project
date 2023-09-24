@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Skills</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,21 +14,33 @@
         <div id="title-div">
             <h1 id="title">Skills</h1>
         </div>
+        <hr />
         <nav id="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="skills.html">Skills</a>
-            <a href="spots.html">Spots</a>
+            <a href="index.html"><h2>Home</h2></a>
+            <a href="favorites.html"><h2>Favorites</h2></a>
+            <a href="skills.html"><h2>Skills</h2></a>
+            <a href="spots.html"><h2>Spots</h2></a>
         </nav>
     </header>
 
-    
+    <h2 id="skills-description">In the computer science field, I'm proficient in Java, Python, HTML, CSS, and Javascript. Here are some projects that I've created.</h2>
+    <div id="project">  
+        <div>
+            <a href="https://github.com/felixc63/GradeCalculatorGUI" target="_blank"><img src="images/gradecalculator.png"></a>
+            <p id="gradecalculator-desc">Created on June 8th, 2023 as a final project for my AP Computer Science A class. This is a a simple Java-made user interface program where a user enters their grades and weights to find their average</p>
+        </div>
+        <div>
+            <a href="https://github.com/MajesticFelix/Demo-Day-Project" target="_blank"><img id="forecastly" src="images/forecastly.png"></a>
+            <p id="forecastly-desc">Created on August 16th, 2023 as a final project during my internship. This is a sleek designed front-ended website powered by OpenWeatherMap API and made with HTML, CSS, and Javascript where a user enters their U.S. zip code to find their weather and air quality.</p>
+        </div>
+    </div>
 
     <!-- footer of the whole site-->
     <footer>
-        <label>Contact Me!</label>
         <div>
             <form>
+                <label>Contact Me!</label>
+                <br>
                 <label>Email:</label>   
                 <input type="text" id="email-input">
                 <label>Text:</label>
@@ -35,7 +48,12 @@
                 <button onclick="event.preventDefault(); document.getElementById('email-input').value = ''; document.getElementById('text-input').value = '';">Submit</button>
             </form>
         </div>
+        <div id="links-container">
+            <a href="https://github.com/MajesticFelix/" target="_blank"><img class="links" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/felix-chan-502636283/" target="_blank"><img img class="links" src="images/linkedin.png"></a>
+        </div>
         <div>
+            <br>
             <label>&copy; Felix Chan</label>
         </div>
     </footer>

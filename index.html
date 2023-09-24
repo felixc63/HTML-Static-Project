@@ -14,35 +14,37 @@
         <div id="title-div">
             <h1 id="title">Home</h1>
         </div>
+        <hr />
         <nav id="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="skills.html">Skills</a>
-            <a href="spots.html">Spots</a>
+            <a href="index.html"><h2>Home</h2></a>
+            <a href="favorites.html"><h2>Favorites</h2></a>
+            <a href="skills.html"><h2>Skills</h2></a>
+            <a href="spots.html"><h2>Spots</h2></a>
         </nav>
     </header>
 
     <div id="home-info-container">
         <div id="home-paragraph-container">
             <p>
-                Hello, my name is Felix and I currently attend Brooklyn Technical Highschool. Something I want to pursue in the future,
+                Hello, my name is Felix and I currently attend Brooklyn Technical Highschool. I enjoy playing 
+                video games, reading, and watching anime as hobbies. Something I want to pursue in the future,
                 would be something related to AI development. Ever since the popular release of chatGPT, many other AIs also proceeded to be released. ChatGPT 3.5,
                 the first released version was open to the public on March 15, 2022 and just almost a year later, chatGPT 4.0 was released with overwhelming power
                 compared to its older version. How quick and complex these AIs develop really fascinate me as a computer science major and I hope to be working
-                on this field in the future. Below is a provided video on the state of development of AIs.
+                on this field in the future. Below is a provided video on the state of AI.
             </p>
         </div>
         <div id="home-video-container">
-            <p>hello</p>
-            <video></video>
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/RzkD_rTEBYs?si=tnLtn65VBFvrrwxP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- footer of the whole site-->
     <footer>
-        <label>Contact Me!</label>
         <div>
             <form>
+                <label>Contact Me!</label>
+                <br>
                 <label>Email:</label>   
                 <input type="text" id="email-input">
                 <label>Text:</label>
@@ -50,7 +52,12 @@
                 <button onclick="event.preventDefault(); document.getElementById('email-input').value = ''; document.getElementById('text-input').value = '';">Submit</button>
             </form>
         </div>
+        <div id="links-container">
+            <a href="https://github.com/MajesticFelix/" target="_blank"><img class="links" src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/felix-chan-502636283/" target="_blank"><img img class="links" src="images/linkedin.png"></a>
+        </div>
         <div>
+            <br>
             <label>&copy; Felix Chan</label>
         </div>
     </footer>
