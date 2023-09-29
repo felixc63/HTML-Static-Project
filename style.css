@@ -58,7 +58,7 @@ footer{
     font-family: "Poppins";
 }
 
-#home-video-container{
+#home-video-container, #audio-container{
     display: flex;
     justify-content: center;
     align-items: center;
